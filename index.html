@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- BOOTSTRAP ICONS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+
+    <title>Typo</title>
+</head>
+
+<body>
+    <div class="page" id="first" data-index="0" data-status="active">
+        <h1>Graphic design</h1>
+        <h6>noun</h6>
+        <h5> /ˌɡræf.ɪk dɪˈzaɪn/</h5>
+        <p>"The art or profession of visual communication that combines images, words, and ideas to convey information
+            to an audience."</p>
+        <button class="page-button left-arrow" type="button" onclick="handleLeftClick()"></button>
+        <button class="page-button right-arrow" type="button" onclick="handleRightClick()"></button>
+    </div>
+    <div class="page" id="second" data-index="1" data-status="inactive">
+        <h1>Development</h1>
+        <h6>noun</h6>
+        <h5> /dɪˈvel.əp.mənt/</h5>
+        <p><font class="color-1">function</font> <font class="color-2">giveDefinition()</font>  <font class="color-3"></br>{</br></font><font class="color-4">'The process in which someone or something grows or changes and becomes more advanced.'</font><font class="color-3"></br>}</font></p>
+        <button class="page-button left-arrow" type="button" onclick="handleLeftClick()"></button>
+        <button class="page-button right-arrow" type="button" onclick="handleRightClick()"></button>
+    </div>
+    <div class="page" id="third" data-index="2" data-status="inactive">
+        <h1>Web3</h1>
+        <h6>noun</h6>
+        <h5> /webθriː/</h5>
+        <p>"Web3 (or Web 3.0) is an idea for a new iteration of the World Wide Web which incorporates concepts such as decentralization, blockchain technologies, and token-based economics."</p>
+        <button class="page-button left-arrow" type="button" onclick="handleLeftClick()"></button>
+        <button class="page-button right-arrow" type="button" onclick="handleRightClick()"></button>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

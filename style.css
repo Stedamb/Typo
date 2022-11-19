@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Arizona";
+    font-stretch: ultra-expanded;
+    src: url(./res/fonts/ABC\ Arizona/ABC\ Arizona\ Text/ABCArizonaText-Regular-Trial.otf);
+}
+
+@font-face {
+    font-family: "Gaisyr";
+    src: url(./res/fonts/ABC\ Gaisyr/ABCGaisyr-RegularItalic-Trial.otf);
+}
+
+@font-face {
+    font-family: "Synt";
+    src: url(./res/fonts/ABC\ Synt\ Variable/ABCSyntVariable-Trial.ttf);
+}
+
+@font-face {
+    font-family: "Simon";
+    src: url(./res/fonts/ABC\ Simon\ Mono/ABCSimonMono-Regular-Trial.otf);
+}
+
+/* Light */
+body {
+    height: 100vh;
+    margin: 0px;
+    position: relative;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: transform 1500ms ease;
+}
+
+.page[data-status="inactive"] {
+    transform: translateX(-100%);
+    transition: none;
+}
+
+.page[data-status="active"] {
+    transform: translateX(0%);
+}
+
+.page[data-status="before"] {
+    transform: translateX(-100%);
+}
+
+.page[data-status="after"] {
+    transform: translateX(100%);
+}
+
+.page[data-status="becoming-active-from-before"] {
+    transform: translateX(-100%);
+    transition: none;
+}
+
+.page[data-status="becoming-active-from-after"] {
+    transform: translateX(100%);
+    transition: none;
+}
+
+.page-button { 
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border: none;
+    background: none;
+    margin: 2%;
+}
+
+.left-arrow {
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0; 
+}
+
+.right-arrow {
+    position: absolute;
+    top: 0; 
+    right: 0;
+}
+
+h1 {
+    font-size: 48pt;
+    margin: 10% 0 0 10%;
+}
+
+h6 {
+    margin: 1% 0 0 10%;
+}
+
+h5 {
+    margin: 1% 0 0 10%;
+}
+
+p {
+    font-size: 20pt;
+    text-align: justify;
+    margin: 1% 0 0 10%;
+    width: 20%;
+}
+
+#first {
+    background-color: #F7F3E3;
+    color: #07090F;
+}
+
+#first > h1 {
+    font-family: "Arizona";
+}
+
+#first > h6 {
+    font-family: "Helvetica";
+    font-style: italic;
+    font-weight: thin;
+}
+
+#first > h5 {
+    font-family: "Helvetica";
+}
+
+#first > p {
+    font-family: "Synt";
+    font-style: italic;
+
+}
+
+#first > button { 
+    background-image: url(./res/icons/right-arrow.svg);
+}
+
+#second {
+    background-color: #93A3B1;
+    color: #0D2C54;
+}
+
+#second > h1 {
+    font-family: "Consolas";
+
+}
+
+#second > h6 {
+    font-family: "Helvetica";
+    font-style: italic;
+    font-weight: thin;
+}
+
+#second > h5 {
+    font-family: "Helvetica";
+}
+
+#second > p {
+    font-family: "Consolas";
+    /* font-style: italic; */
+}
+
+#second > button { 
+    background-image: url(./res/icons/right-arrow-4.svg);
+    color: aliceblue;
+}
+
+.color-1 { color: red;}
+.color-2 { color: purple;}
+.color-3 { color: tomato;}
+.color-4 { color: darkblue;}
+
+#third { 
+    background-color: #C6B9CD;
+}
+
+#third > h1 {
+    font-family: "Simon";
+}
+
+#third > h6 {
+    font-family: "Helvetica";
+    font-style: italic;
+    font-weight: thin;
+}
+
+#third > h5 {
+    font-family: "Helvetica";
+}
+
+#third > p {
+    font-family: "Simon";
+    font-style: italic;
+    font-size: 18pt;
+}
+
+#third > button { 
+    background-image: url(./res/icons/harpoon.svg);
+    background-size: cover;
+    transform: rotate(-45deg);
+}
+
+#third > .left-arrow { 
+    transform: rotate(135deg);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .page-button { 
+        width: 70px;
+        height: 70px;
+    }
+
+    h1 { 
+        margin: 20% 0 0 10%;
+    }
+
+    p {
+        width: 80%;
+        margin: 3% 10% 0% 10%;
+    }
+}
