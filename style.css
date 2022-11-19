@@ -19,6 +19,11 @@
     src: url(./res/fonts/ABC\ Simon\ Mono/ABCSimonMono-Regular-Trial.otf);
 }
 
+@font-face {
+    font-family: "Menlo";
+    src: url(./res/fonts/Menlo/Menlo-Regular.ttf);
+}
+
 /* Light */
 body {
     height: 100vh;
@@ -32,7 +37,7 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
-    transition: transform 1500ms ease;
+    transition: transform 800ms ease-in-out;
 }
 
 .page[data-status="inactive"] {
@@ -138,7 +143,7 @@ p {
 }
 
 #second > h1 {
-    font-family: "Consolas";
+    font-family: "Menlo";
 
 }
 
@@ -153,8 +158,7 @@ p {
 }
 
 #second > p {
-    font-family: "Consolas";
-    /* font-style: italic; */
+    font-family: "Menlo";
 }
 
 #second > button { 
@@ -165,7 +169,7 @@ p {
 .color-1 { color: red;}
 .color-2 { color: purple;}
 .color-3 { color: tomato;}
-.color-4 { color: darkblue;}
+.color-4 { color: darkblue; font-style: italic;}
 
 #third { 
     background-color: #C6B9CD;
@@ -204,16 +208,22 @@ p {
 @media only screen and (max-width: 768px) {
 
     .page-button { 
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
+        margin: 10%;
     }
 
     h1 { 
-        margin: 20% 0 0 10%;
+        margin: 30% 0 0 10%;
     }
 
     p {
         width: 80%;
         margin: 3% 10% 0% 10%;
+    }
+
+    #second > h1 {
+        font-size: 36pt;
+        margin: 32% 0 0 10%;
     }
 }
