@@ -127,13 +127,7 @@ p {
     left: 45%;
     border-radius: 10px;
     box-shadow:
-    10px 10px 30px 0px rgba(0, 0, 0, 0.499);
-        /* inner white */
-        /* 0 0 2px 2px #fff, */
-        /* middle magenta */
-        /* 0 0 3px 3px #f0f, */
-        /* outer cyan */
-        /* 0 0 4px 4px #000; */
+    10px 10px 30px 0px rgba(0, 0, 0, 0.5);
 }
 
 .top-bar {
@@ -284,8 +278,7 @@ p {
     }
 
     #second>h1 {
-        /* font-size: 36pt;
-        margin: 32% 0 0 10%; */
+        font-size: 40pt;
     }
     
     #second>p {
