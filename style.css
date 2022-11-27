@@ -29,6 +29,11 @@
     src: url(./res/fonts/Consolas/consolas.ttf);
 }
 
+@font-face {
+    font-family: "Consolas_italic";
+    src: url(./res/fonts/Consolas/consolas_italic.ttf);
+}
+
 /* Light */
 body {
     height: 100vh;
@@ -37,7 +42,7 @@ body {
 }
 
 .page {
-    height: 200%;
+    height: 100%;
     width: 100%;
     position: absolute;
     left: 0px;
@@ -115,14 +120,14 @@ p {
 
 .main-object {
     background-color: #17183B;
-    width: 800px;
+    width: 40%;
     height: 450px;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 45%;
     border-radius: 10px;
     box-shadow:
-    10px 10px 30px 0px #000;
+    10px 10px 30px 0px rgba(0, 0, 0, 0.499);
         /* inner white */
         /* 0 0 2px 2px #fff, */
         /* middle magenta */
@@ -201,7 +206,7 @@ p {
 }
 
 #second>p {
-    font-family: "Consolas_custom";
+    font-family: "Consolas_italic";
     /* font-size: 16pt; */
 }
 
@@ -211,7 +216,7 @@ p {
 }
 
 .color-1 {
-    color: red;
+    color: darkred;
 }
 
 .color-2 {
@@ -219,7 +224,7 @@ p {
 }
 
 .color-3 {
-    color: tomato;
+    color: darkgoldenrod;
 }
 
 .color-4 {
@@ -261,7 +266,7 @@ p {
     transform: rotate(135deg);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
 
     .page-button {
         width: 50px;
@@ -279,8 +284,8 @@ p {
     }
 
     #second>h1 {
-        font-size: 36pt;
-        margin: 32% 0 0 10%;
+        /* font-size: 36pt;
+        margin: 32% 0 0 10%; */
     }
     
     #second>p {
@@ -292,10 +297,10 @@ p {
         display: inline-block;
         background-color: #17183B;
         width: 90%;
+        height: 350px;
         margin-top: 10%;
         margin-left: 5%;
-        height: 200px;
-        font-size: 8pt;
+        font-size: 12pt;
         align-items: center;
     }
 }
