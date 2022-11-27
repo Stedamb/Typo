@@ -25,7 +25,7 @@
 }
 
 @font-face {
-    font-family: "Consolas_custom";
+    font-family: "Consolas";
     src: url(./res/fonts/Consolas/consolas.ttf);
 }
 
@@ -191,7 +191,7 @@ p {
 }
 
 #second>h1 {
-    font-family: "Consolas_custom";
+    font-family: "Consolas";
 
 }
 
@@ -206,7 +206,7 @@ p {
 }
 
 #second>p {
-    font-family: "Consolas_italic";
+    font-family: "Consolas";
     /* font-size: 16pt; */
 }
 
